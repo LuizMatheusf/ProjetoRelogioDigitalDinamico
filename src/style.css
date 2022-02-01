@@ -54,6 +54,9 @@ table {
     transition: all 0.4s ease;
 }
 
+body {
+    background: #f0f8ff;  
+}
 
 main {
     min-height: 100vh;
@@ -61,7 +64,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f0f8ff;
 }
 
 main.dark {
@@ -175,4 +177,52 @@ main.dark .time .time-colon .colon {
 
 main.dark .time .time-colon .am_pm {
     color: #fff;
+}
+
+/******************************** Media Query ********************************/
+
+@media (max-width: 600px) {
+    
+    main .container {
+        width: 90%;
+    }
+    
+    main .container .icons i {
+        top: 12px;
+        right: 12px;
+    }
+}
+
+@media (max-width: 430px) {
+     
+    .time .time-colon .am_pm {
+        margin-bottom: 60px;
+        font-size: 10px;
+    }
+    
+    .time .time-colon .time-text {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .time .time-colon .time-text .text {
+        display: none;
+    }    
+}
+
+@media (max-width: 345px) {
+    
+    .time .time-colon .am_pm {
+        margin-bottom: 40px;
+    }
+    
+    .time .time-colon .time-text {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .time .time-colon .colon {
+        font-size: 35px;
+        margin: 0 8px;
+    }
 }
