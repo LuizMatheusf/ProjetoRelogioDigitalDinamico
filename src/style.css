@@ -74,13 +74,14 @@ main .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 220px;
-    max-width: 560px;
+    margin: 0 1.5rem;
+    height: 22rem;
+    max-width: 54rem;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 1rem;
     background: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1.2rem;
     position: relative;
 }
 
@@ -90,15 +91,15 @@ main.dark .container {
 
 main .container .icons i {
     position: absolute;
-    top: 17px;
-    right: 17px;
-    width: 30px;
-    height: 30px;
+    top: 1.7rem;
+    right: 1.7rem;
+    width: 3rem;
+    height: 3rem;
     background: #24292d;
     color: #fff;
-    font-size: 14px;
+    font-size: 1.4rem;
     text-align: center;
-    line-height: 30px;
+    line-height: 3rem;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -117,7 +118,7 @@ main .container .icons i.fa-sun {
 main.dark .container .icons i.fa-sun {
     opacity: 1;
     pointer-events: auto;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 main .container .time {
@@ -131,14 +132,14 @@ main .container .time {
 }   
 
 .time .time-colon .time-text {
-    height: 100px;
-    width: 100px;
+    height: 10rem;
+    width: 10rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     background: #f0f8ff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 main.dark .time .time-text {
@@ -147,7 +148,7 @@ main.dark .time .time-text {
 
 .time .time-colon .time-text,
 .time .time-colon .colon {
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 600;
 }
 
@@ -157,22 +158,22 @@ main.dark .time .time-colon .colon {
 }
 
 .time .time-colon .time-text .text {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
 }
 
 .time .time-colon .colon {
-    font-size: 40px;
-    margin: 0 10px;
+    font-size: 4rem;
+    margin: 0 1rem;
 }
 
 .time .time-colon .am_pm {
-    margin-bottom: 80px;
-    margin-left: 8px;
-    font-size: 20px;
+    margin-bottom: 8rem;
+    margin-left: 0.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
 }
 
 main.dark .time .time-colon .am_pm {
@@ -181,6 +182,56 @@ main.dark .time .time-colon .am_pm {
 
 /******************************** Media Query ********************************/
 
+@media  (max-width: 780px) {
+    main .container {
+        height: 220px;
+        max-width: 560px;
+        width: 100%;
+        padding: 0 10px;
+        border-radius: 12px;
+    }
+
+    main .container .icons i {
+        top: 17px;
+        right: 17px;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    main.dark .container .icons i.fa-sun {
+        font-size: 18px;
+    }
+
+    .time .time-colon .time-text {
+        height: 100px;
+        width: 100px;
+    }
+
+    .time .time-colon .time-text,
+    .time .time-colon .colon {
+        font-size: 35px;
+    }
+
+    .time .time-colon .time-text .text {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .time .time-colon .colon {
+        font-size: 40px;
+        margin: 0 10px;
+    }
+
+    .time .time-colon .am_pm {
+        margin-bottom: 80px;
+        margin-left: 8px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+}
+    
 @media (max-width: 600px) {
     
     main .container {
@@ -193,7 +244,7 @@ main.dark .time .time-colon .am_pm {
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
      
     .time .time-colon .am_pm {
         margin-bottom: 60px;
@@ -210,7 +261,7 @@ main.dark .time .time-colon .am_pm {
     }    
 }
 
-@media (max-width: 345px) {
+@media (max-width: 375px) {
     
     .time .time-colon .am_pm {
         margin-bottom: 40px;
